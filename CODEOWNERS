@@ -1,0 +1,11 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @kiingxo will be requested for review when someone opens a pull request.
+* @kiingxo
+
+# Specific file ownership
+app/ @kiingxo
+README.md @kiingxo
+package.json @kiingxo
+next.config.js @kiingxo
+tailwind.config.js @kiingxo 
