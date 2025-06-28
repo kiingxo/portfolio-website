@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  body {
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .terminal-window {
+    @apply bg-terminal-surface border border-terminal-border rounded-lg shadow-lg;
+  }
+  
+  .terminal-header {
+    @apply bg-terminal-bg border-b border-terminal-border px-4 py-2 rounded-t-lg flex items-center space-x-2;
+  }
+  
+  .terminal-dot {
+    @apply w-3 h-3 rounded-full;
+  }
+  
+  .terminal-content {
+    @apply p-6;
+  }
+  
+  .command-line {
+    @apply text-terminal-accent font-mono;
+  }
+  
+  .section-toggle {
+    @apply bg-terminal-surface border border-terminal-border rounded px-3 py-2 text-terminal-text hover:bg-terminal-bg transition-colors duration-200 cursor-pointer;
+  }
+  
+  .section-toggle.active {
+    @apply bg-terminal-accent text-terminal-bg;
+  }
+  
+  .sidebar-link {
+    @apply block w-full text-left px-4 py-2 text-terminal-text hover:bg-terminal-surface hover:text-terminal-accent transition-colors duration-200 rounded;
+  }
+  
+  .sidebar-link.active {
+    @apply bg-terminal-accent text-terminal-bg;
+  }
+  
+  .skill-tag {
+    @apply inline-block bg-terminal-surface border border-terminal-border text-terminal-text px-3 py-1 rounded text-sm mr-2 mb-2;
+  }
+  
+  .project-card {
+    @apply terminal-window p-6 hover:border-terminal-accent transition-colors duration-200 cursor-pointer;
+  }
+  
+  .experience-item {
+    @apply border-l-2 border-terminal-accent pl-4 mb-6;
+  }
+  
+  .contact-item {
+    @apply flex items-center space-x-3 text-terminal-text hover:text-terminal-accent transition-colors duration-200;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff41;
+} 
