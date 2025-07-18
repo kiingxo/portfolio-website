@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Github, Linkedin, ChevronRight } from 'lucide-react'
+import { Mail, Phone, MapPin, Github, Twitter, ChevronRight } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -50,13 +50,13 @@ export default function Home() {
                 <span>Lagos, Nigeria</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
-                <a href="#" className="contact-item">
-                  <Linkedin size={14} className="sm:w-4 sm:h-4" />
-                  <span>LinkedIn</span>
-                </a>
-                <a href="#" className="contact-item">
+                <a href="https://github.com/kiingxo" target="_blank" rel="noopener noreferrer" className="contact-item">
                   <Github size={14} className="sm:w-4 sm:h-4" />
                   <span>GitHub</span>
+                </a>
+                <a href="https://twitter.com/kiingxo" target="_blank" rel="noopener noreferrer" className="contact-item">
+                  <Twitter size={14} className="sm:w-4 sm:h-4" />
+                  <span>Twitter</span>
                 </a>
               </div>
             </div>
