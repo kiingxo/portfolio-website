@@ -50,37 +50,42 @@ export default function Projects() {
   const blueprintProjects = [
     {
       title: "Slash",
-      description: "An AI-powered developer assistant with a chat interface. Understands natural language requests and can answer dev questions or modify code. Lets users preview, accept, or reject pull requests directly from the chat. Think of it as GitHub Copilot + ChatGPT + Cursor in one, but lighter and open source.",
+      description: "A full Flutter AI-powered developer assistant with a chat interface. Understands natural language requests and can answer dev questions or modify code. Lets users preview, accept, or reject pull requests directly from the chat. Uses OpenAI and Gemini AI. Think of it as GitHub Copilot + ChatGPT + Cursor in one, but lighter and open source.",
       features: [
         "AI chat interface for code and dev questions",
         "Code modification and PR preview/accept/reject from chat",
-        "Open source, lightweight alternative to Copilot/ChatGPT/Cursor"
+        "Open source, lightweight alternative to Copilot/ChatGPT/Cursor",
+        "Built fully in Flutter",
+        "Integrates OpenAI and Gemini AI"
       ],
-      technologies: ["TypeScript", "Next.js", "OpenAI API", "GitHub API", "LangChain"],
+      technologies: ["Flutter", "Dart", "OpenAI API", "Gemini AI", "GitHub API"],
       icon: Bot,
       color: "text-cyan-400"
     },
     {
       title: "Chat AI SDK",
-      description: "A frontend-only SDK to embed a customizable AI chat assistant in any app or website. No backend required — just plug in your OpenAI or Gemini key and configure behavior/context. Comes with a clean, pre-built UI that works out of the box.",
+      description: "A frontend-only SDK (built with JavaScript) to embed a customizable AI chat assistant in any app or website. Use via CDN or install on React, Angular, and Vue. No backend required — just plug in your OpenAI or Gemini key and configure behavior/context. Comes with a clean, pre-built UI that works out of the box.",
       features: [
         "Frontend-only, no backend required",
+        "Built with JavaScript",
+        "Use via CDN or install on React, Angular, Vue",
         "Plug-and-play with OpenAI or Gemini keys",
         "Customizable context and behavior",
         "Pre-built, modern UI"
       ],
-      technologies: ["TypeScript", "React", "OpenAI API", "Gemini API"],
+      technologies: ["JavaScript", "CDN", "React", "Angular", "Vue", "OpenAI API", "Gemini API"],
       icon: MessageCircle,
       color: "text-pink-400"
     },
     {
       title: "TagPilot",
-      description: "A crowdsourced data labeling platform for AI teams in Africa and the EU. Includes dashboards for clients and admins (Next.js/Flutter), and a mobile app for labelers. Uses the Dawid-Skene model to improve label accuracy with noisy workers.",
+      description: "A crowdsourced data labeling platform for AI teams in Africa and the EU. Includes dashboards for clients and admins (Next.js/Flutter), and a mobile app for labelers. Uses the Dawid-Skene model to improve label accuracy with noisy workers. Still in development.",
       features: [
         "Crowdsourced data labeling for AI teams",
         "Client/admin dashboards (Next.js/Flutter)",
         "Mobile app for labelers",
-        "Dawid-Skene model for label accuracy"
+        "Dawid-Skene model for label accuracy",
+        "Still in development"
       ],
       technologies: ["Next.js", "Flutter", "Python", "Dawid-Skene", "PostgreSQL"],
       icon: Tag,
