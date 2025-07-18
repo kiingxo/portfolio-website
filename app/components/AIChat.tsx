@@ -56,15 +56,12 @@ export default function AIChat() {
         body: JSON.stringify({ message: inputMessage }),
       })
 
-      if (!response.ok) {
-        throw new Error('Failed to get response')
-      }
-
       const data = await response.json()
       
+      // Handle both successful responses and error responses with messages
       const aiMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: data.message,
+        text: data.message || data.error || "Sorry, I'm having trouble connecting right now. Please try again later or contact Soyombo directly at israelsoyombo@gmail.com",
         isUser: false,
         timestamp: new Date()
       }

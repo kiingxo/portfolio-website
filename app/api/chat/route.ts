@@ -67,7 +67,16 @@ export async function POST(request: NextRequest) {
     if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY) {
       console.error('Google Generative AI API key is not configured');
       return NextResponse.json(
-        { error: 'AI service is not configured' }, 
+        { 
+          error: 'AI service is not configured',
+          message: `I apologize, but my AI service isn't properly configured on this deployment. 
+
+However, I can tell you that Soyombo Israel Oluwaseun is a Senior Software Engineer with 4+ years of experience specializing in Flutter development, AI integration, and scalable system architecture.
+
+For the most up-to-date information, please contact Soyombo directly at israelsoyombo@gmail.com or call +234 811 784 9256. He's available for new opportunities and usually responds within 24 hours.
+
+(Technical note: The GOOGLE_GENERATIVE_AI_API_KEY environment variable needs to be set in the deployment platform.)`
+        }, 
         { status: 500 }
       );
     }
@@ -85,7 +94,14 @@ export async function POST(request: NextRequest) {
         } catch (error3) {
           console.error('Failed to initialize any Gemini model:', error3);
           return NextResponse.json(
-            { error: 'AI model not available' }, 
+            { 
+              error: 'AI model not available',
+              message: `I apologize, but I'm having trouble connecting to my AI service right now. 
+
+However, I can tell you that Soyombo Israel Oluwaseun is a Senior Software Engineer with 4+ years of experience specializing in Flutter development, AI integration, and scalable system architecture.
+
+For the most up-to-date information, please contact Soyombo directly at israelsoyombo@gmail.com or call +234 811 784 9256. He's available for new opportunities and usually responds within 24 hours.`
+            }, 
             { status: 500 }
           );
         }
