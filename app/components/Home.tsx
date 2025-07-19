@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Github, Twitter, ChevronRight } from 'lucide-react'
+import { Mail, Phone, MapPin, Github, Twitter, ChevronRight, Bot, MessageCircle, Tag, Activity } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -117,6 +117,68 @@ export default function Home() {
                 <h3 className="text-terminal-accent font-semibold mb-2 text-sm sm:text-base">Team Leadership</h3>
                 <p className="text-terminal-text text-xs sm:text-sm">
                   Successfully mentored junior developers and led cross-functional teams
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* BlueprintLabs Section */}
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            className="mt-6 sm:mt-8"
+          >
+            <div className="command-line mb-3 sm:mb-4">
+              <span className="text-terminal-accent">$</span> ls blueprintlabs/
+            </div>
+            <div className="bg-terminal-bg p-3 sm:p-4 rounded border border-terminal-border mb-4">
+              <h3 className="text-terminal-accent font-semibold mb-2 text-sm sm:text-base">
+                BlueprintLabs — Engineering the Future of AI
+              </h3>
+              <p className="text-terminal-text text-xs sm:text-sm">
+                A collective of tools and platforms pushing boundaries in developer productivity, agent frameworks, and scalable data annotation. Built with speed, autonomy, and impact in mind.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div className="bg-terminal-bg p-3 sm:p-4 rounded border border-terminal-border">
+                <div className="flex items-center space-x-2 mb-2">
+                  <Bot className="text-cyan-400 w-4 h-4" />
+                  <h4 className="text-terminal-accent font-semibold text-xs sm:text-sm">Slash</h4>
+                </div>
+                <p className="text-terminal-text text-xs sm:text-sm">
+                  Mobile-first AI dev assistant that edits codebases, answers questions, and integrates with GitHub. Built with Flutter, powered by OpenAI & Gemini.
+                </p>
+              </div>
+
+              <div className="bg-terminal-bg p-3 sm:p-4 rounded border border-terminal-border">
+                <div className="flex items-center space-x-2 mb-2">
+                  <MessageCircle className="text-pink-400 w-4 h-4" />
+                  <h4 className="text-terminal-accent font-semibold text-xs sm:text-sm">Chat AI SDK</h4>
+                </div>
+                <p className="text-terminal-text text-xs sm:text-sm">
+                  A frontend-only SDK to embed customizable AI chatbots into any web app. Just plug in an API key — no backend required.
+                </p>
+              </div>
+
+              <div className="bg-terminal-bg p-3 sm:p-4 rounded border border-terminal-border">
+                <div className="flex items-center space-x-2 mb-2">
+                  <Tag className="text-yellow-400 w-4 h-4" />
+                  <h4 className="text-terminal-accent font-semibold text-xs sm:text-sm">TagPilot</h4>
+                </div>
+                <p className="text-terminal-text text-xs sm:text-sm">
+                  A crowdsourced data labeling platform designed for AI labs in Africa and Europe. Includes quality scoring and team dashboards.
+                </p>
+              </div>
+
+              <div className="bg-terminal-bg p-3 sm:p-4 rounded border border-terminal-border">
+                <div className="flex items-center space-x-2 mb-2">
+                  <Activity className="text-red-400 w-4 h-4" />
+                  <h4 className="text-terminal-accent font-semibold text-xs sm:text-sm">Pulse</h4>
+                </div>
+                <p className="text-terminal-text text-xs sm:text-sm">
+                  A personalized GitHub digest that surfaces important PRs, issues, and trends — powered by local embeddings and LLMs.
                 </p>
               </div>
             </div>
