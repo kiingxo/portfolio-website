@@ -6,11 +6,11 @@ import { Calendar, MapPin, Building } from 'lucide-react'
 export default function Experience() {
   const experiences = [
     {
-      title: "Software Engineer (Mobile & AI Lead)",
+      title: "Software Engineer",
       company: "FPG Technologies",
       location: "Lagos, Nigeria",
       period: "Jan 2023 - Present",
-      description: "50+ person technology team",
+      description: "Cross-functional team",
       achievements: [
         "Led Flutter development for large-scale ERP system, ensuring seamless cross-platform performance",
         "Designed and maintained CI/CD pipelines using GitLab and Docker, achieving 40% reduction in deployment times",

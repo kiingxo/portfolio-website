@@ -21,13 +21,17 @@ export default function Projects() {
     {
       title: "AI-Powered Medical Diagnostic System",
       company: "FPG Technologies",
-      description: "Developed and deployed AI agents for medical consultation assistance and diagnostic image analysis (X-rays, CT scans, MRIs).",
+      description: "Built a medical AI system that leverages LLMs and multimodal pipelines to assist doctors in diagnosis and patient triage.",
       features: [
-        "Integrated machine learning models for automated diagnostic suggestions",
-        "Human-in-the-loop validation workflows for medical accuracy",
-        "Built secure API interfaces for medical data processing ensuring HIPAA compliance"
+        "Integrated finetuned LLMs for patient Q&A and medical document understanding",
+        "Implemented Retrieval-Augmented Generation (RAG) for dynamic knowledge grounding from vector databases",
+        "Automated workflows using n8n for secure data ingestion and processing",
+        "Developed NestJS-based APIs with authentication and role-based access for clinics",
+        "Enabled multimodal support for interpreting X-rays and MRI reports using TensorFlow models"
       ],
-      technologies: ["Python", "TensorFlow", "OpenAI APIs", "Vector Databases (Pinecone)", "Medical Imaging APIs"],
+      technologies: [
+        "Python", "JavaScript", "OpenAI APIs", "LangChain", "Pinecone", "n8n", "NestJS", "FastAPI"
+      ],
       icon: Brain,
       color: "text-green-400"
     },
