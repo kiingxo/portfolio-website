@@ -9,7 +9,7 @@ const soyomboInfo = `
 Soyombo Israel Oluwaseun is a Senior Software Engineer with 4+ years of experience specializing in Flutter development, AI integration, and scalable system architecture.
 
 PROFESSIONAL BACKGROUND:
-- Software Engineer (Mobile & AI Lead) at FPG Technologies (Jan 2023 - Present)
+- Software Engineer at FPG Technologies (Jan 2023 - Present)
 - Flutter Consultant & Lead Engineer at Tranquil Life (Jan 2024 - Mar 2024)
 - Software Engineer at Ghost Tech (Nov 2022 - Nov 2023)
 - Mobile Developer Intern at Evacity (Sep 2021 - Nov 2021)
