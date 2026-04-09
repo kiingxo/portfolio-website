@@ -10,14 +10,14 @@ export default function Experience() {
       company: "FPG Technologies",
       location: "Lagos, Nigeria",
       period: "Jan 2023 - Present",
-      description: "Enterprise systems, production AI, and cross-platform delivery",
+      description: "Built and ran enterprise software, AI services, and Flutter apps in production",
       achievements: [
-        "Designed and deployed production AI services through secure FastAPI microservices",
+        "Designed and deployed secure production AI services",
         "Architected and maintained a multi-tenant ERP system supporting concurrent enterprise deployments",
         "Maintained 99.9% uptime for production systems while serving as on-call engineer for incident resolution",
-        "Led cross-platform engineering using Flutter for mobile and web applications",
-        "Implemented real-time communication workflows using WebSockets and push notifications",
-        "Containerized services with Docker and automated CI/CD pipelines to improve release reliability"
+        "Led cross-platform delivery across mobile and web applications",
+        "Implemented real-time communication flows to support operational workflows",
+        "Improved deployment reliability and release velocity through automation"
       ]
     },
     {
@@ -37,7 +37,7 @@ export default function Experience() {
       company: "Tranquil Life",
       location: "Remote (Delaware, US)",
       period: "Jan 2024 - Mar 2024",
-      description: "Secure real-time platform architecture and delivery",
+      description: "Led architecture and delivery for a secure real-time product",
       achievements: [
         "Designed secure client-server architecture for real-time communication and transactional integrity",
         "Implemented appointment scheduling, billing workflows, and voice/video integration with backend coordination",
