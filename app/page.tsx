@@ -51,7 +51,12 @@ export default function Portfolio() {
   }
 
   return (
-    <div className="flex h-screen bg-terminal-bg overflow-hidden">
+    <div className="relative flex h-screen overflow-hidden bg-terminal-bg">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -top-24 left-[-8rem] h-72 w-72 rounded-full bg-terminal-accent/10 blur-3xl" />
+        <div className="absolute top-24 right-[-6rem] h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl" />
+        <div className="absolute bottom-[-5rem] left-1/3 h-72 w-72 rounded-full bg-white/5 blur-3xl" />
+      </div>
       {/* Sidebar */}
       <Sidebar 
         sections={sections}
@@ -60,8 +65,8 @@ export default function Portfolio() {
       />
       
       {/* Main Content */}
-      <main className="flex-1 overflow-auto lg:ml-0 relative">
-        <div className="p-4 sm:p-6 pt-20 lg:pt-6 min-h-full">
+      <main className="relative z-10 flex-1 overflow-auto lg:ml-0">
+        <div className="min-h-full px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8 pt-20 lg:pt-8">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeSection}

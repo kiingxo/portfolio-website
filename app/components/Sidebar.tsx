@@ -57,7 +57,7 @@ export default function Sidebar({ sections, activeSection, onSectionChange }: Si
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        className="lg:hidden fixed top-4 left-4 z-[60] bg-terminal-surface border border-terminal-border rounded p-2 text-terminal-text hover:text-terminal-accent transition-colors"
+        className="lg:hidden fixed top-4 left-4 z-[60] bg-terminal-surface/90 border border-white/10 rounded-xl p-2.5 text-terminal-text shadow-lg shadow-black/30 backdrop-blur-xl hover:text-terminal-accent transition-colors"
         aria-label="Toggle mobile menu"
       >
         {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -80,10 +80,10 @@ export default function Sidebar({ sections, activeSection, onSectionChange }: Si
       <aside 
         className={`fixed lg:relative w-64 bg-terminal-surface border-r border-terminal-border p-4 h-full z-[55] ${
           isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
-        } transition-transform duration-300 ease-in-out`}
+        } transition-transform duration-300 ease-in-out shadow-2xl shadow-black/30 lg:shadow-none`}
       >
         {/* Terminal Header */}
-        <div className="terminal-header mb-6">
+        <div className="terminal-header mb-6 rounded-xl border border-white/10">
           <div className="terminal-dot bg-terminal-error"></div>
           <div className="terminal-dot bg-terminal-warning"></div>
           <div className="terminal-dot bg-terminal-accent"></div>
@@ -118,7 +118,7 @@ export default function Sidebar({ sections, activeSection, onSectionChange }: Si
 
         {/* Status Bar */}
         <div className="absolute bottom-4 left-4 right-4">
-          <div className="text-terminal-secondary text-xs">
+          <div className="surface-panel px-3 py-2 text-terminal-secondary text-xs">
             <div className="flex justify-between">
               <span>Status: Online</span>
               <span>v1.0.0</span>

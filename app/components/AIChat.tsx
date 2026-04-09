@@ -15,7 +15,7 @@ export default function AIChat() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Hello! I'm Soyombo's AI assistant. Ask me anything about his experience, skills, projects, or availability for collaboration!",
+      text: "Hello! I'm Soyombo's AI assistant. Ask me about his enterprise systems work, AI delivery, Flutter experience, or current availability.",
       isUser: false,
       timestamp: new Date()
     }

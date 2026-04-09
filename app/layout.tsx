@@ -3,10 +3,14 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Soyombo Israel Oluwaseun - Software Engineer',
-  description: 'Senior Software Engineer specializing in Flutter, AI, and DevOps. Mobile & AI Specialist with expertise in cross-platform development and machine learning solutions.',
-  keywords: 'Software Engineer, Flutter, AI, DevOps, Mobile Development, Machine Learning',
+  description: 'Software Engineer building scalable enterprise systems, production AI solutions, and Flutter-based cross-platform applications.',
+  keywords: 'Software Engineer, Flutter, AI, Enterprise Systems, Multi-tenant, Mobile Development, Machine Learning',
   authors: [{ name: 'Soyombo Israel Oluwaseun' }],
-  viewport: 'width=device-width, initial-scale=1',
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({

@@ -6,71 +6,32 @@ import { Calendar, MapPin, Building } from 'lucide-react'
 export default function Experience() {
   const experiences = [
     {
-      title: "Software Engineer",
+      title: "Software Engineer (Mobile & AI Lead)",
       company: "FPG Technologies",
       location: "Lagos, Nigeria",
       period: "Jan 2023 - Present",
-      description: "Cross-functional team",
+      description: "Production AI, enterprise systems, and cross-platform delivery",
       achievements: [
-        "Led Flutter development for large-scale ERP system, ensuring seamless cross-platform performance",
-        "Designed and maintained CI/CD pipelines using GitLab and Docker, achieving 40% reduction in deployment times",
-        "Spearheaded development of AI agents for medical consultation assistance and diagnostic image analysis",
-        "Lead a cross-functional mobile development team; mentor junior developers and conduct code reviews",
-        "Contributed to secure API integrations for major institutions including UBA and Zenith Bank",
-        "Maintain 99.9% uptime reliability as on-call developer, ensuring infrastructure stability"
+        "Designed and deployed production AI services for clinical decision support through secure FastAPI microservices",
+        "Architected and maintained a multi-tenant ERP system supporting concurrent enterprise deployments",
+        "Maintained 99.9% uptime for production systems while serving as on-call engineer for incident resolution",
+        "Led cross-platform engineering using Flutter for mobile and web applications",
+        "Implemented real-time communication workflows using WebSockets and push notifications",
+        "Containerized services with Docker and automated CI/CD pipelines to improve release reliability"
       ]
     },
     {
       title: "Flutter Consultant & Lead Engineer",
       company: "Tranquil Life",
-      location: "Delaware, OH (Remote)",
+      location: "Remote (Delaware, US)",
       period: "Jan 2024 - Mar 2024",
-      description: "Remote Consulting Project",
+      description: "Mental health platform architecture and delivery",
       achievements: [
-        "Served as lead Flutter consultant while maintaining primary role at FPG Technologies",
-        "Led Flutter development for dual mental health applications (therapist and user platforms)",
-        "Architected core features including appointment booking, voice/video calls, billing management",
-        "Reduced cold start time and improved app responsiveness under low network conditions",
-        "Provided strategic direction on Flutter best practices, modular architecture, and third-party integrations"
+        "Designed secure client-server architecture for real-time communication and transactional integrity",
+        "Implemented appointment scheduling, billing workflows, and voice/video integration with backend coordination",
+        "Defined API contracts and improved performance under concurrent usage conditions"
       ]
     },
-    {
-      title: "Software Engineer",
-      company: "Ghost Tech",
-      location: "Remote",
-      period: "Nov 2022 - Nov 2023",
-      description: "Full-Stack Development",
-      achievements: [
-        "Developed high-quality cross-platform mobile applications for diverse clients across health, fintech, and e-commerce",
-        "Contributed to responsive websites and web applications using modern frameworks",
-        "Consulted on architectural decisions, API integration strategies, and critical problem-solving",
-        "Built Flutter applications with seamless iOS and Android compatibility",
-        "Worked directly with stakeholders to translate business requirements into technical specifications",
-        "Implemented clean, maintainable code structures following industry best practices"
-      ]
-    },
-    {
-      title: "Mobile Developer Intern",
-      company: "Evacity",
-      location: "Lagos, Nigeria",
-      period: "Sep 2021 - Nov 2021",
-      description: "Flutter Development Team",
-      achievements: [
-        "Collaborated with Flutter development team on bug identification and platform-specific UI development",
-        "Conducted source code analysis to identify and resolve functionality issues"
-      ]
-    },
-    {
-      title: "Mobile Developer Intern",
-      company: "Lagos State House of Assembly",
-      location: "Lagos, Nigeria",
-      period: "Sep 2020 - Dec 2020",
-      description: "Governmental Projects",
-      achievements: [
-        "Developed clean code for various governmental projects",
-        "Collaborated with engineering team on code testing processes and bug resolution"
-      ]
-    }
   ]
 
   return (
@@ -127,7 +88,7 @@ export default function Experience() {
                   </div>
                 </div>
                 
-                <div className="bg-terminal-bg p-3 sm:p-4 rounded border border-terminal-border">
+                <div className="surface-panel p-4 sm:p-5">
                   <div className="command-line mb-3">
                     <span className="text-terminal-accent">$</span> ls achievements_{index + 1}/
                   </div>
