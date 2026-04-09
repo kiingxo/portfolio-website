@@ -136,7 +136,7 @@ export default function Contact() {
             </div>
           </motion.div>
           
-          {/* Availability Status */}
+          {/* Focus Area */}
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -144,16 +144,13 @@ export default function Contact() {
             className="mt-6 sm:mt-8 surface-panel p-4 sm:p-5"
           >
             <div className="command-line mb-2 sm:mb-3">
-              <span className="text-terminal-accent">$</span> ./availability_status.sh
+              <span className="text-terminal-accent">$</span> ./current_focus.sh
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 bg-terminal-accent rounded-full animate-pulse"></div>
-                <span className="text-terminal-text text-xs sm:text-sm">Status: Open to roles, consulting, and collaborations</span>
+                <span className="text-terminal-text text-xs sm:text-sm">Focus: Flutter, Go, distributed systems, and agentic AI</span>
               </div>
-              <span className="text-terminal-secondary text-xs sm:text-sm">
-                Response time: Usually within 24 hours
-              </span>
             </div>
           </motion.div>
         </div>

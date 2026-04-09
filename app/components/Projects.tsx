@@ -19,13 +19,13 @@ export default function Projects() {
       color: "text-blue-400"
     },
     {
-      title: "AI-Powered Diagnostic & Workflow Automation Systems",
+      title: "Agentic AI & Workflow Systems",
       company: "FPG Technologies",
-      description: "Developed AI agents for medical consultation and diagnostic image interpretation across clinical workflows.",
+      description: "Developed AI agents for internal automation, retrieval, and workflow orchestration.",
       features: [
-        "Built secure, compliant APIs for handling sensitive healthcare data",
-        "Integrated AI agents for consultation, triage, and diagnostic support",
-        "Supported X-ray, CT, and MRI workflow interpretation"
+        "Built secure APIs for structured automation and tool orchestration",
+        "Integrated AI agents for retrieval, task routing, and workflow support",
+        "Supported internal product and operations workflows"
       ],
       technologies: ["Python", "FastAPI", "LangChain", "Hugging Face", "OpenAI APIs"],
       icon: Brain,

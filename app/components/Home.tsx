@@ -33,14 +33,15 @@ export default function Home() {
                 <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-terminal-secondary">
                   <span className="rounded-full border border-terminal-accent/30 bg-terminal-accent/10 px-3 py-1 text-terminal-accent">Software Engineer</span>
                   <span className="rounded-full border border-white/10 px-3 py-1">Manchester, United Kingdom</span>
-                  <span className="rounded-full border border-white/10 px-3 py-1">Open to roles and consulting</span>
+                  <span className="rounded-full border border-white/10 px-3 py-1">MSc in AI in progress</span>
+                  <span className="rounded-full border border-white/10 px-3 py-1">Flutter, Go, distributed systems</span>
                 </div>
                 <div>
                   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-terminal-text tracking-tight leading-none">
                     SOYOMBO ISRAEL OLUWASEUN
                   </h1>
                   <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-terminal-secondary">
-                    Software Engineer focused on enterprise systems, production AI, and Flutter delivery for teams that need reliable software with a clear architecture.
+                    I build from Flutter up through Go services, distributed systems, and agentic AI workflows. I'm also doing an MSc in Artificial Intelligence, so the work stays practical, technical, and sharp.
                   </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-terminal-secondary">
@@ -83,10 +84,10 @@ export default function Home() {
             </div>
             <div className="surface-panel p-4 sm:p-5">
               <p className="text-terminal-text leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                Software Engineer with 4+ years of experience building scalable enterprise systems and production AI solutions across fintech and healthcare domains.
+                Software Engineer with 4+ years of experience building scalable enterprise systems, production AI, and Flutter products.
               </p>
               <p className="text-terminal-text leading-relaxed text-sm sm:text-base">
-                Experienced in distributed backend services, multi-tenant architectures, real-time communication systems, and Flutter-based cross-platform applications.
+                Strong in Flutter, Go, distributed backend services, multi-tenant architectures, real-time systems, and agentic workflows.
               </p>
             </div>
           </motion.div>
@@ -110,7 +111,7 @@ export default function Home() {
               <div className="surface-panel p-4 sm:p-5">
                 <h3 className="text-terminal-accent font-semibold mb-2 text-sm sm:text-base">AI Delivery</h3>
                 <p className="text-terminal-text text-xs sm:text-sm">
-                  Shipped production AI microservices for clinical decision support and workflow automation.
+                  Shipped production AI services and agentic workflows for internal automation and decision support.
                 </p>
               </div>
               <div className="surface-panel p-4 sm:p-5">

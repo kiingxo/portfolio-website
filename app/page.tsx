@@ -7,11 +7,6 @@ import {
   Briefcase, 
   Code, 
   Mail, 
-  Github, 
-  Linkedin, 
-  Phone, 
-  MapPin,
-  ChevronRight,
   Terminal
 } from 'lucide-react'
 import Sidebar from './components/Sidebar'
@@ -20,7 +15,6 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-import AIChat from './components/AIChat'
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('home')
@@ -80,9 +74,6 @@ export default function Portfolio() {
           </AnimatePresence>
         </div>
       </main>
-
-      {/* AI Chat Assistant */}
-      <AIChat />
     </div>
   )
 } 
