@@ -34,9 +34,6 @@ export default function Home() {
                   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-terminal-text tracking-tight leading-none">
                     ISRAEL SOYOMBO
                   </h1>
-                  <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-terminal-secondary">
-                    Software Engineer. Flutter, Go, distributed systems, agentic AI, and production software that stays usable.
-                  </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-terminal-secondary">
                   <div className="contact-item">
@@ -66,14 +63,15 @@ export default function Home() {
                   <div className="command-line mb-2 sm:mb-3">
                     <span className="text-terminal-accent">$</span> cat education.txt
                   </div>
-                  <div className="flex flex-col gap-2 text-sm sm:text-base">
+                  <div className="flex flex-col gap-3 text-sm sm:text-base">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3">
                       <span className="text-terminal-text font-medium">MSc in Artificial Intelligence</span>
                       <span className="text-terminal-secondary text-xs sm:text-sm">University of Salford • Expected 2027</span>
                     </div>
-                    <p className="text-terminal-secondary text-xs sm:text-sm">
-                      Also grounded in Computer Science from Bowen University.
-                    </p>
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3">
+                      <span className="text-terminal-text font-medium">BSc in Computer Science</span>
+                      <span className="text-terminal-secondary text-xs sm:text-sm">Bowen University • 2022</span>
+                    </div>
                   </div>
                 </div>
               </div>
