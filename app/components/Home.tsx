@@ -30,18 +30,12 @@ export default function Home() {
           >
             <div className="surface-panel p-4 sm:p-5 lg:p-6">
               <div className="flex flex-col gap-4">
-                <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-terminal-secondary">
-                  <span className="rounded-full border border-terminal-accent/30 bg-terminal-accent/10 px-3 py-1 text-terminal-accent">Software Engineer</span>
-                  <span className="rounded-full border border-white/10 px-3 py-1">Manchester, United Kingdom</span>
-                  <span className="rounded-full border border-white/10 px-3 py-1">MSc in AI in progress</span>
-                  <span className="rounded-full border border-white/10 px-3 py-1">Flutter, Go, distributed systems</span>
-                </div>
                 <div>
                   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-terminal-text tracking-tight leading-none">
-                    SOYOMBO ISRAEL OLUWASEUN
+                    ISRAEL SOYOMBO
                   </h1>
                   <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-terminal-secondary">
-                    I build from Flutter up through Go services, distributed systems, and agentic AI workflows. I'm also doing an MSc in Artificial Intelligence, so the work stays practical, technical, and sharp.
+                    Software Engineer. Flutter, Go, distributed systems, agentic AI, and production software that stays usable.
                   </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-terminal-secondary">
@@ -66,6 +60,20 @@ export default function Home() {
                       <Github size={14} className="sm:w-4 sm:h-4" />
                       <span>GitHub</span>
                     </a>
+                  </div>
+                </div>
+                <div className="surface-panel p-4 sm:p-5">
+                  <div className="command-line mb-2 sm:mb-3">
+                    <span className="text-terminal-accent">$</span> cat education.txt
+                  </div>
+                  <div className="flex flex-col gap-2 text-sm sm:text-base">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3">
+                      <span className="text-terminal-text font-medium">MSc in Artificial Intelligence</span>
+                      <span className="text-terminal-secondary text-xs sm:text-sm">University of Salford • Expected 2027</span>
+                    </div>
+                    <p className="text-terminal-secondary text-xs sm:text-sm">
+                      Also grounded in Computer Science from Bowen University.
+                    </p>
                   </div>
                 </div>
               </div>
