@@ -21,6 +21,18 @@ export default function Experience() {
       ]
     },
     {
+      title: "Founder, Independent AI Lab",
+      company: "BlueprintLabs",
+      location: "Manchester, United Kingdom",
+      period: "Current",
+      description: "Independent AI lab focused on applied LLM systems",
+      achievements: [
+        "Built and lead BlueprintLabs as an independent AI engineering lab",
+        "Developed Slash, a mobile-first GitHub AI agent for repository insights",
+        "Built Pulse, an AI-driven GitHub activity digest system"
+      ]
+    },
+    {
       title: "Flutter Consultant & Lead Engineer",
       company: "Tranquil Life",
       location: "Remote (Delaware, US)",
@@ -32,6 +44,20 @@ export default function Experience() {
         "Defined API contracts and improved performance under concurrent usage conditions"
       ]
     },
+  ]
+
+  const voluntaryRoles = [
+    {
+      title: "Technical Director",
+      organization: "SalcoreAI",
+      location: "University of Salford",
+      period: "Current",
+      description: "AI engineering club leadership",
+      contributions: [
+        "Serve as Technical Director for SalcoreAI, an AI engineering club at the University of Salford",
+        "Lead technical direction for practical AI engineering projects and build sessions"
+      ]
+    }
   ]
 
   return (
@@ -103,6 +129,62 @@ export default function Experience() {
                 </div>
               </motion.div>
             ))}
+
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.35 }}
+              className="pt-2"
+            >
+              <div className="command-line mb-3 sm:mb-4">
+                <span className="text-terminal-accent">$</span> ls voluntary_roles/
+              </div>
+
+              <div className="space-y-5">
+                {voluntaryRoles.map((role, index) => (
+                  <div key={index} className="experience-item">
+                    <div className="flex flex-col mb-3">
+                      <div>
+                        <h3 className="text-lg sm:text-xl font-semibold text-terminal-accent mb-1">
+                          {role.title}
+                        </h3>
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-terminal-secondary text-xs sm:text-sm mb-2 space-y-1 sm:space-y-0">
+                          <div className="flex items-center space-x-1">
+                            <Building size={12} className="sm:w-3.5 sm:h-3.5" />
+                            <span>{role.organization}</span>
+                          </div>
+                          <div className="flex items-center space-x-1">
+                            <MapPin size={12} className="sm:w-3.5 sm:h-3.5" />
+                            <span>{role.location}</span>
+                          </div>
+                          <div className="flex items-center space-x-1">
+                            <Calendar size={12} className="sm:w-3.5 sm:h-3.5" />
+                            <span>{role.period}</span>
+                          </div>
+                        </div>
+                        <p className="text-terminal-text text-xs sm:text-sm italic mb-3">
+                          {role.description}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="surface-panel p-4 sm:p-5">
+                      <div className="command-line mb-3">
+                        <span className="text-terminal-accent">$</span> ls contributions_{index + 1}/
+                      </div>
+                      <ul className="space-y-2">
+                        {role.contributions.map((contribution, idx) => (
+                          <li key={idx} className="text-terminal-text text-xs sm:text-sm flex items-start">
+                            <span className="text-terminal-accent mr-2 mt-1">•</span>
+                            <span>{contribution}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
